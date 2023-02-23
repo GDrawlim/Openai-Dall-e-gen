@@ -1,6 +1,6 @@
 import os 
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] =
 import openai
 
 # Retrieve the API key from the environment variable
