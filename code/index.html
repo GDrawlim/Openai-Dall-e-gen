@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Dall-e Webapp</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </header>
+    <body>
+        <h1> Máquina dos sonhos </h1>
+    <fieldset>        <div>
+            Por favor coloque sua <a href="https://openai.com/api/ " target="_blank">API Key</a>: <input id="api-key" value="API-key-value">
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Configurações</legend>
+        <div>
+            Prompt:
+        </div>
+        <div>
+            <textarea id="text-prompt" rows="4" cols="52">An isometric view of a miniature city, tilt shift, bokeh, voxel, vray render, high detail</textarea>
+        </div>
+        <div>
+            Número de Imagens (1-4): <input id="image-count" value="1">
+        </div>
+        <div>
+            Resolução:
+        </div>
+        <div>
+            <input type="radio" id="radio-256" name="image-size" value="256" checked>
+            <label for="256">256 x 256</label>
+        </div>
+        <div>
+            <input type="radio" id="radio-512" name="image-size" value="512" checked>
+            <label for="512">512 x 512</label>
+        </div>
+        <div>
+            <input type="radio" id="radio-1024" name="image-size" value="1024" checked>
+            <label for="1024">1024 x 1024</label>
+        </div>
+        <div >
+            <button id="button-request" >Request</button>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Request Status</legend>
+        <p id="request-status" >Nenhum Request ainda.</p>
+    </fieldset>
+    <fieldset>
+        <Legend>Imagens</Legend>
+        <div>
+            <!--Imagens aparecerão aqui-->
+            <div  id="request-container"></div>
+        </div>
+    </fieldset>
+        <script type="text/javascript" src="js/script.js">
+        </script>
+
+    </body>
+</html>
